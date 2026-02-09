@@ -562,6 +562,7 @@
         </button>
       </div>
     </div>
+
     <!-- Blocked Action Modal -->
     <div
       v-if="showBlockedModal"
@@ -603,7 +604,6 @@
           />
         </button>
       </div>
-    </div>
     </div>
   </div>
 </template>
