@@ -82,8 +82,9 @@
           >
             <!-- Balloon -->
             <div class="absolute -top-8 left-1/2 -translate-x-1/2 px-3 py-1.5 rounded-xl rounded-bl-none text-[11px] bg-[#262626] text-white leading-tight z-10 text-center min-w-[80px] max-w-[90px] shadow-sm">
-              <!-- eslint-disable-next-line vue/no-v-html -->
+              <!-- eslint-disable vue/no-v-html -->
               <span v-html="note.noteText" />
+              <!-- eslint-enable vue/no-v-html -->
             </div>
 
             <div class="w-[72px] h-[72px] rounded-full p-[2px] border border-gray-800">

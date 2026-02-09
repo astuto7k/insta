@@ -254,11 +254,12 @@
 
             <div class="text-sm">
               <span class="font-semibold mr-1">{{ postItem.de_usuario.username }}</span>
-                <!-- eslint-disable-next-line vue/no-v-html -->
-                <span
-                  class="text-gray-100"
-                  v-html="formatCaption(postItem.post.caption)"
-                />
+              <!-- eslint-disable vue/no-v-html -->
+              <span
+                class="text-gray-100"
+                v-html="formatCaption(postItem.post.caption)"
+              />
+              <!-- eslint-enable vue/no-v-html -->
             </div>
 
             <span class="text-[10px] text-gray-500 uppercase mt-1">
