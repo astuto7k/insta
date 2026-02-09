@@ -5,6 +5,7 @@ interface CacheEntry<T> {
 }
 
 export class CacheService {
+  private constructor() { }
   private static readonly PREFIX = 'stalkea_cache_'
   private static readonly DEFAULT_TTL = (60 * 60 * 1000) // 1 hour in milliseconds
 

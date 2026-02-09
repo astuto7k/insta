@@ -2,6 +2,7 @@ import type { InstagramFeedResponse, StalkeaResponse } from '~/types/instagram'
 import { CacheService } from './cache.service'
 
 export class StalkeaService {
+  private constructor() { }
   // Use local API proxy
   private static readonly BASE_URL = '/api'
 
