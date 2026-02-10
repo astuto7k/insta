@@ -214,7 +214,7 @@ useHead({
 })
 
 const goToCheckout = () => {
-  navigateTo(UPSELL_SIGILO_CHECKOUT_URL, { external: true })
+  navigateTo({ path: '/checkout', query: { produto: 'firewall-sigilo' } })
 }
 
 const localFaq = ref([

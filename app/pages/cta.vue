@@ -610,7 +610,6 @@
 
 <script setup lang="ts">
 import { StalkeaService } from '~/services/stalkea.service'
-import { CHECKOUT_URL } from '~/utils/constants'
 import type { InstagramFeedResponse, PerfilBuscado } from '~/types/instagram'
 
 const route = useRoute()
@@ -635,7 +634,7 @@ const testimonialImages = [
 ]
 
 const goToCheckout = () => {
-  navigateTo(CHECKOUT_URL, { external: true })
+  navigateTo({ path: '/checkout', query: { produto: 'insta-espiao-vip', username: username.value } })
 }
 
 // FAQ Data

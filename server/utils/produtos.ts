@@ -1,7 +1,15 @@
-import type { ProdutoCheckout } from '~/types/payevo'
+// Catálogo de produtos — server-side (duplicado do frontend para segurança)
+// Garante que o backend sempre usa os valores corretos, mesmo se o frontend for manipulado
 
-// Catálogo de produtos com preços em centavos e redirecionamento pós-pagamento
-export const PRODUTOS: Record<string, ProdutoCheckout> = {
+interface ProdutoServer {
+    id: string
+    nome: string
+    descricao: string
+    precoEmCentavos: number
+    proximaPagina: string | null
+}
+
+export const PRODUTOS_SERVER: Record<string, ProdutoServer> = {
     'insta-espiao-vip': {
         id: 'insta-espiao-vip',
         nome: 'Acesso VIP Insta Espião',
@@ -38,5 +46,3 @@ export const PRODUTOS: Record<string, ProdutoCheckout> = {
         proximaPagina: null
     }
 }
-
-export const APP_VERSION = '1.0.0'
