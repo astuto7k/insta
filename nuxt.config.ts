@@ -1,10 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  runtimeConfig: {
-    // Chave secreta PayEvo — nunca exposta ao cliente
-    payevoSecretKey: process.env.PAYEVO_SECRET_KEY || '',
-    payevoApiUrl: process.env.PAYEVO_API_URL || 'https://apiv2.payevo.com.br'
-  },
 
   modules: ['@nuxt/eslint', '@nuxt/ui', '@nuxt/image'],
 
@@ -13,6 +8,11 @@ export default defineNuxtConfig({
   },
 
   css: ['~/assets/css/main.css'],
+  runtimeConfig: {
+    // Chave secreta PayEvo — nunca exposta ao cliente
+    payevoSecretKey: process.env.PAYEVO_SECRET_KEY || '',
+    payevoApiUrl: process.env.PAYEVO_API_URL || 'https://apiv2.payevo.com.br'
+  },
 
   routeRules: {
     '/': { prerender: true }
