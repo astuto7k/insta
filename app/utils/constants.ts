@@ -6,7 +6,7 @@ export const PRODUTOS: Record<string, ProdutoCheckout> = {
     id: 'insta-espiao-vip',
     nome: 'Acesso VIP Insta Espião',
     descricao: 'Acesso completo ao Insta Espião',
-    precoEmCentavos: 2490,
+    precoEmCentavos: 3790,
     proximaPagina: '/sigilo'
   },
   'firewall-sigilo': {

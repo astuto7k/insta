@@ -309,7 +309,7 @@
           <!-- Price Box -->
           <div class="bg-[#161618] border border-purple-500/20 rounded-2xl p-4 text-center mb-6 relative">
             <span class="text-gray-500 text-sm line-through block mb-1">De: R$ 279,90</span>
-            <span class="text-4xl font-black text-purple-500">R$ 24<span class="text-2xl">,90</span></span>
+            <span class="text-4xl font-black text-purple-500">R$ 37<span class="text-2xl">,90</span></span>
 
             <div class="flex justify-center gap-4 mt-3 text-[10px] text-gray-400">
               <span class="flex items-center gap-1"><UIcon
@@ -379,7 +379,7 @@
             class="bg-gradient-to-br from-[#7c3aed] to-[#5b21b6] rounded-[14px] py-4 px-6 flex flex-col items-center"
             style="display: flex; flex-direction: column; align-items: center;"
           >
-            <span class="text-md font-bold text-white mb-1">Acessar tudo agora mesmo por R$24,90</span>
+            <span class="text-md font-bold text-white mb-1">Acessar tudo agora mesmo por R$37,90</span>
             <span class="text-xs text-purple-200">Acesso liberado em até 2 minutos</span>
           </div>
         </button>

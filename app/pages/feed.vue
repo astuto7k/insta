@@ -601,7 +601,7 @@ onMounted(async () => {
       try {
         feedData.value = JSON.parse(cachedData)
         // Clear the cache after using it
-        sessionStorage.removeItem('stalkeaFeedData')
+        // Keep cache for back navigation support
         loading.value = false
         return
       } catch (e) {

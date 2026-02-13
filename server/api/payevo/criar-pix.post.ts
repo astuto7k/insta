@@ -4,7 +4,7 @@
 import { createPixTransaction } from '../../services/payevo.service'
 
 const PRODUTOS: Record<string, { valor: number, descricao: string, nome: string, proximaPagina: string | null }> = {
-  'insta-espiao-vip': { valor: 2490, descricao: 'Acesso completo ao Insta Espião', nome: 'Acesso VIP Insta Espião', proximaPagina: '/sigilo' },
+  'insta-espiao-vip': { valor: 3790, descricao: 'Acesso completo ao Insta Espião', nome: 'Acesso VIP Insta Espião', proximaPagina: '/sigilo' },
   'firewall-sigilo': { valor: 1990, descricao: 'Proteção total dos dados e identidade', nome: 'Firewall & Sigilo', proximaPagina: '/planos' },
   'plano-gold': { valor: 6700, descricao: 'Plano Gold - Acesso de 7 dias', nome: 'Plano Gold', proximaPagina: null },
   'plano-diamond': { valor: 9700, descricao: 'Plano Diamond - Acesso de 1 mês', nome: 'Plano Diamond', proximaPagina: null },

@@ -138,6 +138,7 @@
 // Set dark mode
 const colorMode = useColorMode()
 colorMode.preference = 'dark'
+const route = useRoute()
 
 // SEO Meta
 useHead({
@@ -173,7 +174,13 @@ const selectPlan = (plan: string) => {
 
   const produtoId = ids[plan]
   if (produtoId) {
-    navigateTo({ path: '/checkout', query: { produto: produtoId } })
+    navigateTo({ 
+      path: '/checkout', 
+      query: { 
+        ...route.query,
+        produto: produtoId 
+      } 
+    })
   }
 }
 </script>
