@@ -6,11 +6,11 @@ const props = defineProps<{
   pixData?: PixCheckoutData | null
   loading: boolean
   erro?: string | null
-  statusPagamento: 'pending' | 'paid' | 'failed'
+  statusPagamento: 'idle' | 'creating' | 'pending' | 'paid' | 'failed' | 'error'
 }>()
 
 const emit = defineEmits<{
-  (e: 'tentar-novamente'): void
+  (e: 'retry'): void
 }>()
 
 const copiado = ref(false)
@@ -67,7 +67,7 @@ const copiarCodigo = async () => {
       </div>
       <button
         class="mt-2 bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-xl text-sm font-medium transition-colors"
-        @click="emit('tentar-novamente')"
+        @click="emit('retry')"
       >
         Tentar Novamente
       </button>
