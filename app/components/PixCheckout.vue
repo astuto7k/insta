@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { defineEmits, ref } from 'vue';
 import type { PixCheckoutData } from '~/types/payevo'
 
 const props = defineProps<{
